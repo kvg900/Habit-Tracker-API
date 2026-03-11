@@ -7,11 +7,7 @@ const isProduction = process.env.APP_STAGE === 'production'
 const isDevelopment = process.env.APP_STAGE === 'dev'
 const isTesting = process.env.APP_STAGE === 'test'
 
-if (isDevelopment) {
-  loadEnv()
-} else if (isTesting) {
-  loadEnv('test')
-}
+loadEnv(process.env.APP_STAGE)
 
 const envSchema = z.object({
   NODE_ENV: z
