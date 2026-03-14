@@ -9,7 +9,12 @@
     "start": "node src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "tsx src/db/seed.ts"
   },
   "keywords": [
     "habit-tracker",
@@ -47,7 +52,7 @@
     "cross-env": "^10.0.0",
     "drizzle-kit": "^0.31.4",
     "supertest": "^6.3.4",
-    "tsx": "^4.20.4",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
