@@ -27,6 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "@epic-web/remember": "^1.1.0",
+    "@types/morgan": "^1.9.10",
     "@types/pg": "^8.18.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

@@ -106,10 +106,10 @@ const envSchema = z.object({
 
   DATABASE_URL: z.string().url().startsWith('postgres'),
 
-  // JWT_SECRET: z.string().min(44).describe('Used for signing JWTs'),
+  JWT_SECRET: z.string().min(44).describe('Used for signing JWTs'),
   JWT_EXPIRES_IN: z.string().default('7d'),
 
-  BCRYPT_ROUNDS: z.coerce.number().int().min(10).max(16).default(12),
+  BCRYPT_SALT_ROUNDS: z.coerce.number().int().min(10).max(16).default(12),
 
   // Add more variables here as your app grows
   // e.g. REDIS_URL: z.string().url().optional(),

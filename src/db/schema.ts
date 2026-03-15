@@ -111,6 +111,7 @@ export const habitTagsRelations = relations(habitTags, ({ one }) => ({
 }))
 
 export type Users = typeof users.$inferSelect
+export type NewUsers = typeof users.$inferInsert
 export type Habit = typeof habits.$inferSelect
 export type Entry = typeof entries.$inferSelect
 export type Tag = typeof tags.$inferSelect
